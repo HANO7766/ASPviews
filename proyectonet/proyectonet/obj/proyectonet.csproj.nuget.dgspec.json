@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\renat\\OneDrive\\Escritorio\\ASPviews\\proyectonet\\proyectonet\\proyectonet.csproj": {}
+    "C:\\Users\\renat\\OneDrive\\Escritorio\\Proyecto\\proyectonet\\proyectonet\\proyectonet.csproj": {}
   },
   "projects": {
-    "C:\\Users\\renat\\OneDrive\\Escritorio\\ASPviews\\proyectonet\\proyectonet\\proyectonet.csproj": {
+    "C:\\Users\\renat\\OneDrive\\Escritorio\\Proyecto\\proyectonet\\proyectonet\\proyectonet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\renat\\OneDrive\\Escritorio\\ASPviews\\proyectonet\\proyectonet\\proyectonet.csproj",
+        "projectUniqueName": "C:\\Users\\renat\\OneDrive\\Escritorio\\Proyecto\\proyectonet\\proyectonet\\proyectonet.csproj",
         "projectName": "proyectonet",
-        "projectPath": "C:\\Users\\renat\\OneDrive\\Escritorio\\ASPviews\\proyectonet\\proyectonet\\proyectonet.csproj",
+        "projectPath": "C:\\Users\\renat\\OneDrive\\Escritorio\\Proyecto\\proyectonet\\proyectonet\\proyectonet.csproj",
         "packagesPath": "C:\\Users\\renat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\renat\\OneDrive\\Escritorio\\ASPviews\\proyectonet\\proyectonet\\obj\\",
+        "outputPath": "C:\\Users\\renat\\OneDrive\\Escritorio\\Proyecto\\proyectonet\\proyectonet\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\renat\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,9 +40,31 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.29, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
             }
           },
           "imports": [
