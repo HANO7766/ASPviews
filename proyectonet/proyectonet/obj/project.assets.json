@@ -533,11 +533,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\renat\\OneDrive\\Escritorio\\Proyecto\\proyectonet\\proyectonet\\proyectonet.csproj",
+      "projectUniqueName": "C:\\Users\\renat\\OneDrive\\Escritorio\\ASPviews\\proyectonet\\proyectonet\\proyectonet.csproj",
       "projectName": "proyectonet",
-      "projectPath": "C:\\Users\\renat\\OneDrive\\Escritorio\\Proyecto\\proyectonet\\proyectonet\\proyectonet.csproj",
+      "projectPath": "C:\\Users\\renat\\OneDrive\\Escritorio\\ASPviews\\proyectonet\\proyectonet\\proyectonet.csproj",
       "packagesPath": "C:\\Users\\renat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\renat\\OneDrive\\Escritorio\\Proyecto\\proyectonet\\proyectonet\\obj\\",
+      "outputPath": "C:\\Users\\renat\\OneDrive\\Escritorio\\ASPviews\\proyectonet\\proyectonet\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\renat\\AppData\\Roaming\\NuGet\\NuGet.Config",

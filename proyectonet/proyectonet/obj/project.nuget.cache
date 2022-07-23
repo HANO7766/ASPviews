@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FGwE5fs27sGRTSIl488eOPCpWE80CGkhhzZi2y+ZH7VRZ2D9sCDORHA8tWWs7fYF6Lnl3DAVQJ6GpX66FDsK8A==",
+  "dgSpecHash": "v1/C4jiCyo7tgh30s+TnnceDYnwGRzL8t2WnLAXlnuD7NHapVauF2U0U1AnASRjQQpyDE6M7cm0FYG6uJbEsvw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\renat\\OneDrive\\Escritorio\\Proyecto\\proyectonet\\proyectonet\\proyectonet.csproj",
+  "projectFilePath": "C:\\Users\\renat\\OneDrive\\Escritorio\\ASPviews\\proyectonet\\proyectonet\\proyectonet.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\renat\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.7\\microsoft.entityframeworkcore.6.0.7.nupkg.sha512",
     "C:\\Users\\renat\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.7\\microsoft.entityframeworkcore.abstractions.6.0.7.nupkg.sha512",
