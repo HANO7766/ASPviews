@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3ivmdAYCmMi6Oaxpad0vXlGeQpHFg95CvHlQvr/jvPZnXj2Shm6bsoiKDRqWyqcBwy3A9HcC6xY3l0961hsHMw==",
+  "dgSpecHash": "fN7S5ywfE1czMUz0e5tvoDlpmI6sMxqczi2IpNvEri4dMxc+z+AzBK2sb9dB1jZON/blS1vIcThFqMMz2NJ5hA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\renat\\OneDrive\\Escritorio\\Proyecto\\proyectonet\\proyectonet\\proyectonet.csproj",
+  "projectFilePath": "C:\\Users\\renat\\OneDrive\\Escritorio\\ASPviews\\proyectonet\\proyectonet\\proyectonet.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\renat\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\renat\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
