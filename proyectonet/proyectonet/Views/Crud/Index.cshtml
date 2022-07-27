@@ -1,7 +1,15 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+	@using proyectonet.Models;
+	@using MySql.Data.MySqlClient;
+
+    List<Producto> lista = new List<Producto>();
+    ctrlProductos _ctrlProductos = new ctrlProductos();
+
+	MySqlConnection conexionDB = Conexion.Connexion();
+	String sql = "SELECT * FROM productos";
+	MySqlCommand cmd = new(sql, conexionDB);
+	conexionDB.Open();
+}
 <!doctype html>
 <html lang="en">
   <head>
@@ -15,58 +23,65 @@
 
   </head>
   <body>
-  <div class="container mt-5">
-    <div class="row justify-content-center">
-        <div class="col-md-7">
-            <!-- inicio alerta -->
-            <div class="card">
-                <div class="card-header">
-                    Lista de productos
-                </div>
-                <div class="p-4">
-                    <table class="table align-middle">
-                        <thead>
-                            <tr>
-                                <th scope="col">id</th>
-                                <th scope="col">Nombre</th>
-                                <th scope="col">descripcion</th>
-                                <th scope="col">precio</th>
-                                <th scope="col" colspan="2">Opciones</th>
-                            </tr>
-                        </thead>
-                    </table>
-                    
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <div class="card-header">
-                    Ingresar datos:
-                </div>
-                <form class="p-4" method="" action="">
-                    <div class="mb-3">
-                        <label class="form-label">Nombre: </label>
-                        <input type="text" class="form-control" name="txtNombre" autofocus required>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Descripcion: </label>
-                        <input type="number" class="form-control" name="txtEdad" autofocus required>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Precio: </label>
-                        <input type="text" class="form-control" name="txtSigno" autofocus required>
-                    </div>
-                    <div class="d-grid">
-                        <input type="hidden" name="oculto" value="1">
-                        <input type="submit" class="btn btn-primary" value="Registrar">
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
+			<div class="tab-content" id="myTabContent">
+				<div class="tab-pane fade show active" id="list" role="tabpanel" aria-labelledby="list-tab">
+					<div class="card">
+						<div class="card-header">
+							<h4>Lista</h4>
+						</div>
+						<div class="card-body">
+							<div class="table-responsive">
+								<table id="userList" class="table table-bordered table-hover table-striped">
+									<thead class="thead-light">
+										<tr>
+											<th>#</th>
+											<th>nombre de semilla</th>
+											<th>descripcion</th>
+											<th>precio</th>
+											<th></th>
+										</tr>
+									</thead>
+									<tbody>
+										@{
+											Producto row = null;
+											MySqlDataReader dr = cmd.ExecuteReader();
+											while (dr.Read())
+											{
+												row = new Producto();
 
-  </body>
+														<tr>
+															<th>@{
+															row.Id = int.Parse(dr["id"].ToString());
+																}
+															@row.Id
+															</th>
+															<th>@{
+															row.Nombre = dr["nombre"].ToString();
+																}
+															@row.Nombre
+															</th>
+															<th>@{
+															row.Descripcion = dr["descripcion"].ToString();
+																}
+															@row.Descripcion
+															</th>
+														<th>$@{
+															row.Precio = int.Parse(dr["precio"].ToString());
+															  }
+															@row.Precio
+														</th>
+																</tr>
+											}
+										}
+											
+											
+											
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+
+   </body>
 </html>
-}
