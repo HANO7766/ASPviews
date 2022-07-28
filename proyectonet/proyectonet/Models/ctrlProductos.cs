@@ -13,7 +13,7 @@ internal class ctrlProductos
 
         if (dato == null)
         {
-            sql = "SELECT id, nombre, descripcion, precio FROM pruductos ORDER BY nombre ASC";
+            sql = "SELECT id, nombre, descripcion, precio FROM productos ORDER BY nombre ASC";
         }
         else
         {

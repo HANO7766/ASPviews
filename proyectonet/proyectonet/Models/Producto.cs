@@ -3,7 +3,11 @@ namespace proyectonet.Models
 {
     public class Producto
     {
- 
+        int id;
+        String nombre;
+        String descripcion;
+        int precio;
+        int Stock;
 
         public Producto()
         {
