@@ -23,10 +23,33 @@ namespace proyectonet.Controllers
                 cmd.ExecuteNonQuery();
 
 
-            }
+            } 
             catch (Exception exe)
             {
-                Console.WriteLine("no se puede guardar" + exe.Message);
+                Console.WriteLine("error al guardar" + exe.Message);
+            }
+            finally
+            {
+                conexionDB.Close();
+            }
+
+            return RedirectToAction("Index", "Crud");
+        }
+        public IActionResult borrar(int id)
+        {
+            string sql = "DELETE FROM productos WHERE id='" + id + "'";
+
+            MySqlConnection conexionDB = Conexion.Connexion();
+            conexionDB.Open();
+            Console.WriteLine("Registro eliminado ");
+            try
+            {
+                MySqlCommand cmd = new(sql, conexionDB);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception exec)
+            {
+                Console.WriteLine("ERROR AL ELIMINAR " + exec.Message);
             }
             finally
             {

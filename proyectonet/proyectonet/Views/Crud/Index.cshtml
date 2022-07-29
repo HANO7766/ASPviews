@@ -54,39 +54,86 @@
 											{
 												row = new Producto();
 
-														<tr>
-															<th>@{
+															<tr>
+																<th>@{
 															row.Id = int.Parse(dr["id"].ToString());
-																}
-															@row.Id
-															</th>
-															<th>@{
+																	}
+																@row.Id
+																</th>
+																<th>@{
 															row.Nombre = dr["nombre"].ToString();
-																}
-															@row.Nombre
-															</th>
-															<th>@{
+																	}
+																@row.Nombre
+																</th>
+																<th>@{
 															row.Descripcion = dr["descripcion"].ToString();
-																}
-															@row.Descripcion
-															</th>
-														<th>$@{
+																	}
+																@row.Descripcion
+																</th>
+															<th>$@{
 															row.Precio = int.Parse(dr["precio"].ToString());
-															  }
-															@row.Precio
-														</th>
-																</tr>
+															  	}
+																@row.Precio
+															</th>
+
+														 	<td>
+															<a href="~/Crud/Borrar/@row.Id"><i class="fas fa-user-times"></i></a>
+															</td>
+															</tr>
 											}
 										}
-											
-											
-											
+
 										</tbody>
 									</table>
 								</div>
 							</div>
 						</div>
+					<div class="container">
+					<div id="form">
+						<div class="card">
+							<div class="card-header">
+								<h4>ingrese datos:</h4>
+							</div>
+							<div class="card-body">
+								<form class="form" role="form" autocomplete="off" action="/Crud/ingresar" method="POST">
+									<div class="form-group row text-center">
+										<label class="col-lg-4 col-form-label form-control-label">Serial producto:</label>
+										<div class="col-lg-6 text-center">
+											<input class="form-control" type="text" required name="cod">
+										</div>
+									</div>
+									<div class="form-group row text-center">
+										<label class="col-lg-4 col-form-label form-control-label">nombre :</label>
+										<div class="col-lg-6 text-center">
+											<input class="form-control" type="text" name="nombre">
+										</div>
+									</div>
+									<div class="form-group row text-center">
+										<label class="col-lg-4 col-form-label form-control-label">descripcion:</label>
+										<div class="col-lg-6 text-center">
+											<textarea name="descrip" class="form-control"></textarea>
+										</div>
+									</div>
+									<div class="form-group row text-center">
+										<label class="col-lg-4 col-form-label form-control-label">precio:</label>
+										<div class="col-lg-6 text-center">
+											<input class="form-control" type="text" name="precio">
+										</div>
+									</div>
+									<div class="form-group row">
+										<div class="col-lg-12 text-center">
+											<input type="reset" class="btn btn-secondary" value="Cancelar">
+											<input type="submit" class="btn btn-primary" value="Enviar">
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
 					</div>
+					</div>
+					</div>
+
+
 
    </body>
 </html>
