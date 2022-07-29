@@ -26,7 +26,7 @@ namespace proyectonet.Controllers
             }
             catch (Exception exe)
             {
-                Console.WriteLine("ERROR AL GUARDAR" + exe.Message);
+                Console.WriteLine("no se puede guardar" + exe.Message);
             }
             finally
             {
@@ -35,5 +35,6 @@ namespace proyectonet.Controllers
 
             return RedirectToAction("Index", "Crud");
         }
+
     }
 }
